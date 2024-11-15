@@ -1,0 +1,1 @@
+Welcome to Medinfo, a comprehensive platform to access vital healthcare information, including hospitals, blood camps, event registrations, and much more. Explore a seamless way to stay informed and connected to essential health services.
