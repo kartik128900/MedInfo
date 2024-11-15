@@ -1,0 +1,585 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title> registration form</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+    
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Baloo+Thambi+2&family=Nunito+Sans:wght@300&family=Oleo+Script+Swash+Caps&family=Oswald&family=Permanent+Marker&display=swap');
+
+
+
+    body{
+
+
+        background: url(/contact.png);
+        background-position: center;
+        background-size: cover;
+    }
+    .part1{
+    display: grid;
+    grid-template-columns: 32% 68%;
+    
+     
+      background: url(images/community\ blue.jpg) no-repeat;
+            background-size: cover;
+            background-position: center; 
+
+        
+            justify-content: center;
+          
+
+            
+    }
+
+
+    .text-content h1 {
+
+
+      position: relative;
+      top: 10rem;
+      
+    
+      background: transparent;
+      font-size: 4rem;
+    
+      font-family: 'oswald';
+
+    }
+
+    .text-content p{
+
+      font-family: 'oswald';
+      font-size: 1.5rem;
+      padding-left:20px;
+      color:#f6bb46;
+
+    }
+
+    .text-content h2{
+
+      font-family: 'oswald';
+      font-size: 1.5rem;
+      padding-left: 20px;
+      color:#c9a739;
+
+
+    }
+
+
+    body{
+      background-color: #000000;
+
+    }
+
+    .main-form-block,
+    h1,
+    form,
+    input,
+    p {
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 16px;
+      color: rgb(8, 6, 6);
+      opacity: ;
+
+
+
+    }
+
+    .main-form-block h1{
+
+      color:#130f40;
+    }
+
+    .h2 {
+
+      color: white;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 40px;
+      font-weight: 600;
+      position: absolute;
+
+      margin-top: 20px;
+      padding: 2em;
+
+
+
+
+
+    }
+
+    h1 {
+      padding: 20px 0;
+      font-size: 32px;
+      font-weight: 500;
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      background: #ebebeb;
+
+    }
+
+    p {
+      font-size: 12px;
+    }
+
+    hr {
+      color: #a9a9a9;
+      opacity: 0.3;
+    }
+
+    .main-form-block {
+      max-width: 550px;
+      min-height: 360px;
+      padding: 10px 0;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: solid 1px #ccc;
+      box-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
+      background: #ebebeb;
+      
+      opacity: .8;
+
+    }
+
+    form {
+      margin: 0 30px;
+      background: #ebebeb;
+
+
+    }
+
+    .account-type,
+    .gender {
+      margin: 15px 0;
+      background: #ebebeb;
+
+    }
+
+    input[type=radio] {
+      display: none;
+
+    }
+
+    label#icon {
+      margin: 0;
+      border-radius: 5px 0 0 5px;
+
+    }
+
+    label.radio {
+      position: relative;
+      display: inline-block;
+      padding-top: 4px;
+      margin-right: 20px;
+      text-indent: 30px;
+      overflow: visible;
+      cursor: pointer;
+      background: #ebebeb;
+
+    }
+
+    label.radio:before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #1c87c9;
+
+    }
+
+    label.radio:after {
+      content: "";
+      position: absolute;
+      width: 9px;
+      height: 4px;
+      top: 8px;
+      left: 4px;
+      border: 3px solid white;
+      border-top: none;
+      border-right: none;
+      transform: rotate(-45deg);
+      opacity: 0;
+    }
+
+    input[type=radio]:checked+label:after {
+      opacity: 1;
+
+    }
+
+    input[type=text],
+    input[type=password] {
+      width: calc(100% - 57px);
+      height: 36px;
+      margin: 20px 0 0 -5px;
+      padding-left: 10px;
+      border-radius: 0 5px 5px 0;
+      border: solid 1px #cbc9c9;
+      box-shadow: 1px 2px 5px rgba(0, 0, 0, .09);
+      background: #fff;
+    }
+
+    input[type=mail] {
+
+      width: calc(100% - 57px);
+      height: 36px;
+      margin: 20px 0 0 -5px;
+      padding-left: 10px;
+      border-radius: 0 5px 5px 0;
+      border: solid 1px #cbc9c9;
+      box-shadow: 1px 2px 5px rgba(0, 0, 0, .09);
+      background: #fff;
+
+
+    }
+
+    input[type=text]:hover {
+      border: 1px solid grey
+    }
+
+
+    input[type=mail]:hover {
+      border: 1px solid grey
+    }
+
+    input[type=password]:hover {
+      border: 1px solid grey
+    }
+
+
+
+
+
+    input[type=password] {
+      margin-bottom: 10px;
+
+    }
+
+    #icon {
+      display: inline-block;
+      padding: 9.3px 15px;
+      box-shadow: 1px 2px 5px rgba(0, 0, 0, .09);
+      background: #484ba7;
+      color: #fff;
+      text-align: center;
+
+    }
+
+    .btn-block {
+      margin-top: 10px;
+      text-align: center;
+      background: #ebebeb;
+
+    }
+
+    .btn-block p {
+      background: #ebebeb;
+
+
+    }
+
+    button {
+      width: 70%;
+      padding: 10px 0;
+      margin: 10px auto;
+      border-radius: 5px;
+      border: none;
+      background: #484ba7;
+      box-shadow: 0 2px 2px 0 rgb(31, 32, 32);
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+
+    }
+
+    button:hover {
+      background: #7c78c9;
+      width: 80%;
+      transition-duration: 0.5s;
+    }
+
+    textarea {
+
+      margin-top: 30px;
+      margin-left: 5px;
+      border: none;
+      color: grey;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 16px;
+      color: grey;
+      height: 150px;
+      width: 350px;
+
+    }
+
+    /*features section*/
+
+
+    h1 {
+      color: white;
+    }
+
+    .features p{
+      color:white;
+    }
+
+    .features {
+      display: flex;
+      align-items: center;
+      flex: 6;
+      justify-content: space-around;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+
+      color: white;
+    }
+
+    .features .box {
+      padding: 1cm;
+      width: 10cm;
+      box-shadow: 0 0 10px lightgrey;
+      border-radius: 1cm;
+      margin-right: 1cm;
+      transition: 0.5s;
+      cursor: pointer;
+
+      background-color: #130f40;
+      background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
+    }
+
+    .features .box:hover {
+      transform: scale(1.03);
+    }
+
+    .features .box i {
+      padding: 20px;
+      border-radius: 50%;
+      font-size: 1cm;
+      color: white;
+    }
+
+    .fa-headphones-alt {
+      background-color: #a4508b;
+      background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+
+    }
+
+    .line {
+      padding: 2px;
+      border-radius: 3px;
+      width: 5cm;
+      background-color: #a4508b;
+      background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+      margin-bottom: 0.3cm;
+    }
+
+    h2 {
+      margin-top: 0.5cm;
+      margin-bottom: 0.5cm;
+    }
+
+    .fa-crown {
+      background-color: #ff4e00;
+      background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+
+    }
+
+    .fa-user {
+      background-color: #00b712;
+      background-image: linear-gradient(315deg, #00b712 0%, #5aff15 74%);
+    }
+
+    .l2 {
+      background-color: #ff4e00;
+      background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+    }
+
+    .l3 {
+      background-color: #00b712;
+      background-image: linear-gradient(315deg, #00b712 0%, #5aff15 74%);
+    }
+
+    /*position of part*/
+    .part2{
+      position: relative;
+      top:200px;
+      
+      
+    }
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+  </style>
+</head>
+
+<body>
+
+
+ 
+<div class="part1">
+
+
+    
+  <div class="text-content">
+
+    <h1><center></span></center></h1>
+    </ul>
+
+  </div>
+
+
+  <div class="main-form-block">
+    <h1>Appoinment Booking</h1>
+
+
+    <form method="post"> 
+      <hr>
+      <label id="icon" for="name"><i class="fas fa-user"></i></label>
+      <input type="text" id="name" placeholder="Enter your Name" name="name">
+
+
+      <label id="icon" for="name"><i class="fas fa-user"></i></label>
+      <input type="text" id="name" placeholder="Enter your age" name="mail">
+
+      <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
+      <input type="password" name="name" id="password" placeholder="Password" name="password" >
+
+
+
+      <label id="icon" for="name"><i class="fas fa-address-book"></i></label>
+      <input type="text" name="name" id="number" placeholder="Contact Number" name="number">
+
+
+
+      
+      <textarea name="text" id="" cols="30" rows="10" id="textarea" placeholder=" Enter Your Queries"></textarea>
+
+
+
+      <hr>
+      <div class="gender">
+        <input type="radio" value="none" id="male" name="gender" checked />
+        <label for="male" class="radio"> Male</label>
+        <input type="radio" value="none" id="female" name="gender" />
+        <label for="female" class="radio">Female</label>
+      </div>
+      <hr>
+      <div class="btn-block">
+        <p>By clicking Register, you agree on our <a href="terms and conditions.html">terms and conditions</a> for Medinfo.com.</p>
+        <button id="btn" value="submit" name="submit">submit</button>
+
+        <button type="reset">reset</button>
+      </div>
+    </form>
+  </div>
+
+
+
+</div>
+
+  <!-- our policies -->
+
+
+  <div class="part2">
+    
+    <div class="features">
+      <div class="box">
+        <i class="fas fa-headphones-alt"></i>
+        <h2>Customer Service</h2>
+        <div class="line l1"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-crown"></i>
+        <h2>Simple Interface</h2>
+        <div class="line l2"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-user"></i>
+        <h2>Business Tools</h2>
+        <div class="line l3"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+          lorem</p>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+<!--<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+
+
+<script>
+
+  var btn = document.getElementById('btn');
+  btn.addEventListener('click', function (e) {
+    e.preventDefault()
+
+    var name = document.getElementById('name').value;
+
+    var email = document.getElementById('email').value;
+    var body = 'name: ' + name + '</br> email :' + email
+
+    Email.send({
+      Host: "smtp.elasticemail.com",
+      Username: "premsatpute2002@gmail.com",
+      Password: "vaffgsefjpzrnukb",
+      To: 'premsatpute2002@gmail.com',
+      From: email,
+      Subject: "This is the subject",
+      Body: body,
+    }).then(
+      message => alert(done!!!)
+    );
+
+
+
+  })
+
+
+</script> -->
+
+
+
